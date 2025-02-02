@@ -190,8 +190,9 @@ public class MainActivity extends AppCompatActivity {
                     input = "-(" + input + ")";
                     coCongTru = true;
                 } else {
-                    input = input.replace("-(", "");
-                    input = input.replace(")", "");
+                    input = input.replaceFirst("-\\(", "");
+                    input = new StringBuilder(input).reverse().toString().replaceFirst("\\)", "");
+                    input = new StringBuilder(input).reverse().toString();
                     coCongTru = false;
                 }
                 String result = txtResult.getText().toString().replace("=","").trim();
@@ -215,6 +216,7 @@ public class MainActivity extends AppCompatActivity {
     private void SuKienBang() {
         btnBang.setOnClickListener(v -> {
             coBang = true;
+            coCongTru = false;
             if(coCong || coTru || coNhan || coChia) {
                 ThucHienPhepTinh();
             }
