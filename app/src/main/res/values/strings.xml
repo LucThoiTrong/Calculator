@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="text_AC">AC</string>
+    <string name="text_C">C</string>
+    <string name="text_Chia">/</string>
+    <string name="text_Nhan">X</string>
+    <string name="text_Tru">-</string>
+    <string name="text_Cong">+</string>
+    <string name="text_Bang">=</string>
+    <string name="text_Del">DEL</string>
+    <string name="text_Cong_Tru">+/-</string>
+    <string name="text_Dot">.</string>
+    <string name="text_0">0</string>
+    <string name="text_1">1</string>
+    <string name="text_2">2</string>
+    <string name="text_3">3</string>
+    <string name="text_4">4</string>
+    <string name="text_5">5</string>
+    <string name="text_6">6</string>
+    <string name="text_7">7</string>
+    <string name="text_8">8</string>
+    <string name="text_9">9</string>
+</resources>
