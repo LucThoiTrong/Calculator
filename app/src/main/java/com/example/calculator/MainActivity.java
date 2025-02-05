@@ -269,6 +269,13 @@ public class MainActivity extends AppCompatActivity {
                        break;
                }
                input = input.substring(0, input.length() - 1);
+               // Kiểm tra trường hợp đặc biệt
+               // Ví dụ -2 => sau khi xoá kí tự cuối còn lại là -
+               // => Đặt lại trạng thái
+               if(input.equals("-")) {
+                   DatLaiTrangThai();
+                   return;
+               }
                txtInput.setText(input);
            }
         });
